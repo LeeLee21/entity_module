@@ -1,0 +1,5 @@
+# Schema for the theme setting configuration file of the leeleetheme theme.
+
+leeleetheme.settings:
+  type: theme_settings
+  label: 'leeleetheme settings'

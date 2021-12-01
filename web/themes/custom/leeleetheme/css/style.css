@@ -1,0 +1,16 @@
+/**
+ * If using a CSS pre-processor, tell it to overwrite this file. If not, place
+ * your custom CSS modifications here.
+ */
+
+.dialog-off-canvas-main-canvas .navbar {
+  background-color: transparent;
+  border: none;
+  border-bottom: 10px solid black;
+  border-radius: 10px;
+  padding-bottom: 10px;
+  display: flex;
+}
+.dialog-off-canvas-main-canvas .navbar .navbar-header {
+  margin: 0 auto;
+}

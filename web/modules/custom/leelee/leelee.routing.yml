@@ -1,0 +1,6 @@
+leelee.front:
+  path: '/leelee'
+  defaults:
+    _controller: '\Drupal\leelee\Controller\LeeLeeController::buildForm'
+  requirements:
+    _permission: 'access content'

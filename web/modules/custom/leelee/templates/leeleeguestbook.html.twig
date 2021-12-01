@@ -1,0 +1,36 @@
+{{ attach_library('leelee/leelees.entity') }}
+<div class="content">
+  <div class="form">{{ form }}</div>
+  {% for row in rows %}
+  <div class="content-review">
+      <div class="user-info">
+        <div class="user-ava">
+          <div class="avatar">{% if row.avatar__target_id.data %}
+              {{ row.avatar__target_id }}
+            {% else %}
+              <img src="modules/custom/leelee/files/non-avatar.png" alt="default_user">
+            {% endif %}</div>
+        </div>
+        <div class="user-variables">
+          <div class="name">{{ row.name }}</div>
+          <div class="email">{{ row.email }}</div>
+          <div class="phone_number">{{ row.phone_number }}</div>
+          <div class="timestamp">{{ row.timestamp |date('M-d-Y H:i:s') }}</div>
+        </div>
+      </div>
+      <div class="user-response">
+        <div class="response">{{ row.response }}</div>
+        <div class="image">{{ row.image__target_id }}</div>
+      </div>
+    {% if user.hasPermission('administer nodes') %}
+      <div class="guestbook_buttons">
+        <a href="/guestbook/edit/{{ row.id }}" class="use-ajax guestbook-edit" data-dialog-type="modal">{{ 'Edit' |trans }}</a>
+        <a href="/guestbook/delete/{{ row.id }}" class="use-ajax guestbook-delete" data-dialog-type="modal">{{ 'Delete'|trans }}</a>
+      </div>
+    {% endif %}
+  </div>
+  {% endfor %}
+</div>
+
+
+

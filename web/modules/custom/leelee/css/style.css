@@ -1,0 +1,58 @@
+.content-review {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0 20px 0;
+  border-bottom: 3px solid black;
+}
+.content-review .user-info{
+  display: flex;
+  height: 150px;
+}
+.content-review .user-info{
+  margin: auto 0;
+}
+.content-review .user-info .user-ava{
+  margin: auto 0;
+  width: 150px;
+}
+.content-review .user-info .user-ava .avatar {
+  display: flex;
+  justify-content: center;
+}
+.content-review .user-info .user-ava .avatar img{
+  margin: auto 0;
+}
+.content-review .user-info .user-variables{
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.content-review .user-info .user-variables .name{
+  color: #FA8527FF;
+  font-weight: bold;
+}
+.content-review .user-response{
+  display: flex;
+  align-items: center;
+  width: 800px;
+  justify-content: space-between;
+}
+.content-review .user-response .response{
+  margin-left: 20px;
+  width: 500px;
+}
+.content-review .user-response .image{
+  margin-right: 20px;
+}
+.content-review .btn{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.content-review .guestbook_buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
